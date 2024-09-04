@@ -3,15 +3,23 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[[source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu118"
+verify_ssl = false
+
 [packages]
+torch = {index = "pytorch",version = "==2.1.0"}
+torchvision = {index = "pytorch",version = "==0.16.0"}
+torchaudio = {index = "pytorch",version = "==2.1.0"}
+
 pandas = "*"
 numpy = "*"
-ipykernel = "*"
-matplotlib = "*"
 scikit-learn = "*"
-seaborn = "*"
+ipykernel = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.12"
+python_version = "3.8"
+python_full_version = "3.8.0"
