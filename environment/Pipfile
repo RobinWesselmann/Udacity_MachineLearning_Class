@@ -12,11 +12,11 @@ verify_ssl = false
 torch = {index = "pytorch",version = "==2.1.0"}
 torchvision = {index = "pytorch",version = "==0.16.0"}
 torchaudio = {index = "pytorch",version = "==2.1.0"}
-
 pandas = "*"
 numpy = "*"
 scikit-learn = "*"
 ipykernel = "*"
+seaborn = "*"
 
 [dev-packages]
 
